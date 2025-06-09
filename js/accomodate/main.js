@@ -38,13 +38,17 @@ const heroSwiper = new Swiper('.production__images', {
 const productSwiper = new Swiper('.products__slider', {
   effect: 'fade',
   autoplay: {
-    delay: 2000,
+    delay: 10000000,
     disableOnInteraction: false,
   },
   preloadImages: true,
   lazy: true,
   loop: true,
   slidesPerView: 1,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
 })
 
 // document.querySelector('.form').addEventListener('submit', async function (e) {
