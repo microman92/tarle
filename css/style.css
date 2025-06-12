@@ -1,230 +1,3 @@
-@media(max-width: 576px) {
-  .burger-menu {
-    display: flex;
-    position: relative;
-    z-index: 10
-  }
-
-  .burger-menu.active {
-    z-index: 30
-  }
-
-  .burger-menu.active .line:last-child {
-    transform: rotate(-45deg) translate(6px, -9px)
-  }
-
-  .burger-menu.active .line:first-child {
-    transform: rotate(45deg) translateY(4px)
-  }
-
-  .burger-menu.active .line:nth-child(2) {
-    opacity: 0
-  }
-
-  .nav__list {
-    display: none
-  }
-
-  .nav__list.mobile {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center
-  }
-
-  .nav__list.mobile .nav__link {
-    display: inline-block;
-    padding-left: 12px;
-    position: relative
-  }
-
-  .nav__list.mobile .nav__link::after {
-    content: "";
-    display: block;
-    width: 100px;
-    height: 1px;
-    background: #fff;
-    margin-top: 8px;
-    position: absolute;
-    left: 0
-  }
-
-  .nav__right {
-    position: relative;
-    align-items: center
-  }
-
-  .nav__actions {
-    position: absolute;
-    top: 0;
-    right: -5px;
-    height: 170px;
-    width: 45vw;
-    background: #000;
-    z-index: -3;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    opacity: 0;
-    transition: .3s ease-in-out
-  }
-
-  .nav__actions.active {
-    opacity: 1;
-    z-index: 10
-  }
-
-  .nav__lang {
-    margin-top: 20px;
-    margin-left: 20px
-  }
-
-  .nav__options {
-    position: static;
-    flex-direction: row;
-    max-height: 200px;
-    opacity: 1;
-    z-index: 1
-  }
-
-  .nav__option {
-    text-shadow: 0 0 8px rgba(255, 215, 77, .9), 0 0 15px rgba(255, 215, 77, .7), 0 0 25px rgba(255, 215, 77, .5), 0 0 40px rgba(255, 215, 77, .3)
-  }
-
-  .nav__lang.active .nav__option {
-    background: rgba(0, 0, 0, 0)
-  }
-
-  .nav__lang.active .nav__option::after {
-    display: none
-  }
-
-  .hero__slider {
-    height: 300px
-  }
-
-  .hero__slide:nth-child(7) img {
-    height: 100%
-  }
-
-  .about__swiper.swiper {
-    display: block;
-    height: 350px;
-    padding: 10px
-  }
-
-  .about__img {
-    display: none
-  }
-
-  .about__slide.swiper-slide img {
-    height: 100%;
-    width: 100%;
-    object-fit: fill;
-    border-radius: 3px
-  }
-
-  .about__swiper .swiper-wrapper {
-    box-shadow: 0 0 0px 0 #ecc440, 0 0 1px 0 #ecc440, 0 0 3px 0 #ecc440, 0 0 5px 0 #ecc440, 0 0 9px 0 #ecc440, 0 0 16px 0 #ecc440;
-    border-radius: 5px
-  }
-
-  .about__slide_inner {
-    height: 100%
-  }
-
-  .about__desc_top {
-    gap: 15px
-  }
-
-  .text {
-    font-size: 13px
-  }
-
-  .works-slide__img {
-    height: 300px
-  }
-
-  .works-slide__title {
-    width: 50%;
-    font-size: 22px
-  }
-
-  .works-slide__list {
-    width: 50%;
-    max-width: initial
-  }
-
-  .works-slide__list_text {
-    font-size: 16px
-  }
-
-  .works-slide__desc {
-    margin-top: 30px
-  }
-
-  .partners__logo {
-    padding: 30px 0;
-    gap: 20px
-  }
-
-  .partners__line {
-    gap: 30px
-  }
-
-  .partners__logo img {
-    height: 50px
-  }
-
-  .partners__line-four img:nth-child(1) {
-    height: 35px
-  }
-
-  .cicle {
-    width: 120px;
-    height: 80px
-  }
-
-  .feedback__form {
-    max-width: 250px
-  }
-
-  .form {
-    margin-top: 50px;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    max-width: 70%
-  }
-
-  .form input {
-    font-size: 16px;
-    padding: 9px;
-    font-weight: 500
-  }
-
-  .form input::placeholder {
-    font-size: 16px
-  }
-
-  .form input:nth-of-type(2) {
-    margin-top: 9px
-  }
-
-  .form__btn {
-    font-size: 16px
-  }
-
-  .footer__adress.text-block,
-  .footer__link.text-block {
-    font-size: 15px
-  }
-
-  .footer__logo img {
-    width: 80px
-  }
-}
-
-
 @font-face {
   font-family: "Inter";
   src: url("../fonts/InterBold.woff2");
@@ -1014,9 +787,81 @@ body {
   padding-bottom: 74px;
 }
 
-.feedback__form {}
+.feedback__form {
+  max-width: 410px;
+  margin: 30px auto 0;
+}
 
-.feedback__btn {}
+.feedback__form input {
+  width: 100%;
+  padding: 20px;
+  border-radius: var(--bRadius);
+  background: var(--white);
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 150%;
+  color: rgba(27, 97, 162, 0.7);
+}
+
+.feedback__form input:nth-child(1) {
+  margin-bottom: 14px;
+}
+
+.feedback__form input::placeholder {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 150%;
+  color: rgba(27, 97, 162, 0.7);
+}
+
+
+.feedback__btn {
+  background: #354751;
+  padding: 20px 0;
+  width: 100%;
+  border-radius: var(--bRadius);
+  margin-top: 70px;
+  font-size: 30px;
+}
+
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer {
+  padding-top: 36px;
+  padding-bottom: 68px;
+  background: var(--mainColor);
+  margin-top: 112px;
+}
+
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  max-width: 790px;
+}
+
+.footer__tel:nth-child(2) {
+  margin-bottom: 46px;
+}
+
+.footer__maps {
+  margin-top: 40px;
+}
+
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.footer__icons {
+  margin-top: 85px;
+  display: flex;
+  gap: 32px;
+}
 
 
 
@@ -1215,110 +1060,6 @@ body {
     font-size: 13px
   }
 
-  .works-slide__img {
-    height: 300px
-  }
-
-  .works-slide__title {
-    width: 50%;
-    font-size: 22px
-  }
-
-  .works-slide__list {
-    width: 50%;
-    max-width: initial
-  }
-
-  .works-slide__list_text {
-    font-size: 16px
-  }
-
-  .works-slide__desc {
-    margin-top: 30px
-  }
-
-  .partners__logo {
-    padding: 30px 0;
-    gap: 20px
-  }
-
-  .partners__line {
-    gap: 30px
-  }
-
-  .partners__logo img {
-    height: 50px;
-    width: 50px
-  }
-
-  .partners__logo .akfa-img,
-  .partners__logo .enter-img {
-    width: 70px;
-    height: 40px
-  }
-
-  .partners__line-four img:nth-child(1) {
-    height: 40px
-  }
-
-  .cicle {
-    width: 120px;
-    height: 80px
-  }
-
-  .feedback__form {
-    max-width: 250px
-  }
-
-  .form {
-    margin-top: 50px;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    max-width: 70%
-  }
-
-  .form input {
-    font-size: 16px;
-    padding: 9px;
-    font-weight: 500
-  }
-
-  .form input::-webkit-input-placeholder {
-    font-size: 16px
-  }
-
-  .form input::-moz-placeholder {
-    font-size: 16px
-  }
-
-  .form input:-ms-input-placeholder {
-    font-size: 16px
-  }
-
-  .form input::-ms-input-placeholder {
-    font-size: 16px
-  }
-
-  .form input::placeholder {
-    font-size: 16px
-  }
-
-  .form input:nth-of-type(2) {
-    margin-top: 9px
-  }
-
-  .form__btn {
-    font-size: 16px
-  }
-
-  .footer__adress.text-block,
-  .footer__link.text-block {
-    font-size: 15px
-  }
-
-  .footer__logo img {
-    width: 80px
-  }
 }
 
 
