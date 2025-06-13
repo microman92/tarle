@@ -51,36 +51,43 @@ const productSwiper = new Swiper('.products__slider', {
   },
 })
 
-// document.querySelector('.form').addEventListener('submit', async function (e) {
-//   e.preventDefault()
 
-//   const name = document.getElementById('name').value.trim()
-//   const phone = document.getElementById('tel').value.trim()
 
-//   const formData = new FormData()
-//   formData.append('name', name)
-//   formData.append('phone', phone)
+document.querySelector('.feedback__form').addEventListener('submit', async function (e) {
+  e.preventDefault()
 
-//   try {
-//     const response = await fetch('feedback.php', {
-//       method: 'POST',
-//       body: formData,
-//     })
 
-//     if (response.ok) {
-//       const thankYouMessage = document.querySelector('.thank')
-//       thankYouMessage.classList.add('active')
+  const name = document.getElementById('name').value.trim()
+  const phone = document.getElementById('tel').value.trim()
 
-//       thankYouMessage.addEventListener('click', () =>
-//         thankYouMessage.classList.remove('active'),
-//       )
+  console.log(name);
+  console.log(phone);
 
-//       setTimeout(() => this.reset(), 2000);
 
-//     } else {
-//       thank__block.innerHTML = `<h2 class="thank__title"> Не удалось отправить заявку. Попробуйте позже. </h2>`
-//     }
-//   } catch (error) {
-//     console.error('Ошибка:', error)
-//   }
-// })
+  const formData = new FormData()
+  formData.append('name', name)
+  formData.append('phone', phone)
+
+  try {
+    const response = await fetch('feedback.php', {
+      method: 'POST',
+      body: formData,
+    })
+
+    if (response.ok) {
+      const thankYouMessage = document.querySelector('.thank')
+      thankYouMessage.classList.add('active')
+
+      thankYouMessage.addEventListener('click', () =>
+        thankYouMessage.classList.remove('active'),
+      )
+
+      setTimeout(() => this.reset(), 2000);
+
+    } else {
+      thank__block.innerHTML = `<h2 class="thank__title"> Не удалось отправить заявку. Попробуйте позже. </h2>`
+    }
+  } catch (error) {
+    console.error('Ошибка:', error)
+  }
+})

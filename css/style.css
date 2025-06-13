@@ -764,7 +764,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  gap: 30px;
   margin-top: 60px;
 }
 
@@ -889,6 +889,11 @@ body {
 }
 
 
+@media(max-width:1200px) {
+  .hero {
+    margin-top: 70px;
+  }
+}
 
 @media(max-width: 576px) {
   .burger-menu {

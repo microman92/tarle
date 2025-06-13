@@ -15,16 +15,17 @@
     <nav class="nav flex items-center container" aria-label="Главная навигация">
       <div class="nav__left flex">
         <a href="/" class="logo" aria-label="Перейти на главную страницу">
-          <img src="./images/svg/logo.png" alt="Логотип компании Turan Global Group" loading="lazy" />
+          <img src="./images/svg/logo.svg" alt="Логотип компании Turan Global Group" loading="lazy" width="120"
+            height="82" />
         </a>
 
         <ul class="nav__list flex items-center">
           <li><a href="#about" class="nav__link link" aria-label="Перейти к разделу О нас">О нас</a></li>
           <li>
-            <a href="#works" class="nav__link link" aria-label="Перейти к разделу Продукция">Продукция</a>
+            <a href="#products" class="nav__link link" aria-label="Перейти к разделу Продукция">Продукция</a>
           </li>
           <li>
-            <a href="#partners" class="nav__link link" aria-label="Перейти к разделу Производство">Производство</a>
+            <a href="#production" class="nav__link link" aria-label="Перейти к разделу Производство">Производство</a>
           </li>
         </ul>
       </div>
@@ -74,13 +75,13 @@
       <p class="hero__text text">Выбирайте сотрудничество с лидером !</p>
     </section>
 
-    <section class="about container">
+    <section class="about container" id="about">
       <h2 class="about__title title">О нашей компании</h2>
 
       <div class="about__desc flex">
 
         <div class="about__intro">
-          <img class="about__logo" src="./images/svg/logo.svg" alt="" />
+          <img class="about__logo" src="./images/svg/logo.svg" alt="" width="200" />
           <span class="text"> — это динамичная группа компаний, которая берет своего начало с 1991 года.</span>
         </div>
         <p class="about__text text">
@@ -97,7 +98,7 @@
       </div>
     </section>
 
-    <section class="production container-secondary">
+    <section class="production container-secondary" id="production">
       <h2 class="production__title title">Наше производство</h2>
 
       <div class="swiper production__images">
@@ -137,7 +138,7 @@
 
     </section>
 
-    <section class="products container-secondary">
+    <section class="products container-secondary" id="products">
       <h2 class="products__title title">Наша продукция</h2>
 
       <div class="swiper products__slider">
@@ -707,9 +708,9 @@
     <section class="feedback container">
       <h2 class="feedback__title title">Оставить заявку</h2>
       <form class="feedback__form">
-        <input type="text" placeholder="Имя" required>
-        <input type="text" placeholder="tel" required>
-        <button class="feedback__btn title">Отправить</button>
+        <input type="text" placeholder="Имя" required id="name">
+        <input type="tel" placeholder="Номер" required id="tel">
+        <button class="feedback__btn title" type="submit">Отправить</button>
       </form>
     </section>
 
@@ -719,7 +720,7 @@
 
   <footer class="footer">
     <div class="footer__inner container">
-      <a href="" class="footer__logo"><img src="./images/svg/logo.svg" alt=""></a>
+      <a href="" class="footer__logo"><img src="./images/svg/logo.svg" alt="" width="250"></a>
       <addres class="footer__contacts">
         <a class="text footer__tel" href="tel:+998933885885">+998 93 388 58 85</a>
         <a class="text footer__tel" href="++998933809666">+998 93 380 96 66</a>
@@ -739,8 +740,10 @@
           <li><a href="#!" class="footer_list_link text">Производство</a></li>
         </ul>
         <div class="footer__icons">
-          <a href="https://www.instagram.com/tarle.sandwich?utm_source=ig_web_button_share_sheet&igsh=d2I5ejl5cDd5azdw"><img src="./images/svg/instagram-tarle-group.svg" alt=""></a>
-          <a href=""><img src="./images/svg/targle-group-tashkent-facebook-fb.svg" alt=""></a>
+          <a href="https://www.instagram.com/tarle.sandwich?utm_source=ig_web_button_share_sheet&igsh=d2I5ejl5cDd5azdw"
+            target="_blank"><img src="./images/svg/instagram-tarle-group.svg" alt=""></a>
+          <a href="https://www.facebook.com/profile.php?id=61575329717481" target="_blank"><img
+              src="./images/svg/targle-group-tashkent-facebook-fb.svg" alt=""></a>
         </div>
       </div>
     </div>
