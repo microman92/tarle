@@ -898,8 +898,12 @@ body {
 
   .hero,
   .products,
-  .certificates__item {
+  .certificates__items {
     margin: 50px auto;
+  }
+
+  .certificates__items {
+    justify-content: center;
   }
 
   .text {
@@ -990,9 +994,78 @@ body {
   .profiles__item {
     max-width: 360px;
   }
+
+  .profiles__text {
+    max-width: 430px;
+  }
+
+  .benefits__grid {
+    justify-content: center;
+    gap: 60px;
+  }
+
+  .benefits__icon img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .benefits__item_text {
+    font-size: 17px;
+  }
+
+  .benefits__item:nth-child(2),
+  .benefits__item:nth-child(4) {
+    order: 1;
+  }
+
+  .feedback__form {
+    max-width: 360px;
+  }
+
+  .feedback__btn.title {
+    font-size: 25px;
+  }
+
+  .feedback__form input,
+  .feedback__form input::placeholder {
+    font-size: 25px;
+  }
+
+  .footer__inner {
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .feedback__btn {
+    margin-top: 50px;
+  }
+
+  .footer__icons img {
+    width: 50px;
+  }
+
+  .footer__icons {
+    margin-top: 40px;
+  }
+
+  .footer__contacts {
+    max-width: 500px;
+  }
+
+  .footer__maps {
+    margin-top: 20px;
+  }
+
+  .footer__tel:nth-child(2) {
+    margin-bottom: 20px;
+  }
+
+  .footer__logo img {
+    width: 150px;
+  }
 }
 
-@media(max-width: 576px) {
+@media(max-width: 768px) {
   .burger-menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1122,47 +1195,12 @@ body {
     display: none
   }
 
-  .hero__slider {
-    height: 300px
-  }
-
-  .hero__slide:nth-child(7) img {
-    height: 100%
-  }
-
-  .about__swiper.swiper {
-    display: block;
-    height: 350px;
-    padding: 10px
-  }
-
-  .about__slide.swiper-slide img {
-    height: 100%;
-    width: 100%;
-    -o-object-fit: fill;
-    object-fit: fill;
-    border-radius: 3px
-  }
-
-  .about__swiper .swiper-wrapper {
-    -webkit-box-shadow: 0 0 0px 0 #ecc440, 0 0 1px 0 #ecc440, 0 0 3px 0 #ecc440, 0 0 5px 0 #ecc440, 0 0 9px 0 #ecc440, 0 0 16px 0 #ecc440;
-    box-shadow: 0 0 0px 0 #ecc440, 0 0 1px 0 #ecc440, 0 0 3px 0 #ecc440, 0 0 5px 0 #ecc440, 0 0 9px 0 #ecc440, 0 0 16px 0 #ecc440;
-    border-radius: 5px
-  }
-
-  .about__slide_inner {
-    height: 100%
-  }
-
-  .about__desc_top {
-    gap: 15px
-  }
-
-  .text {
-    font-size: 13px
-  }
-
 }
+
+
+
+
+
 
 
 .thank {
