@@ -355,7 +355,22 @@ body {
 }
 
 .nav__socials {
-  display: none
+  display: flex;
+  gap: 10px;
+}
+
+.nav__socials a img {
+  width: 35px;
+  height: 35px;
+}
+
+.nav__option.link {
+  font-size: 16px;
+}
+
+.nav__bottom {
+  gap: 40px;
+  margin-top: 25px;
 }
 
 .nav__left {
@@ -404,7 +419,7 @@ body {
 .nav__option {
   color: #fff;
   cursor: pointer;
-  padding: 13px 23px 4px 23px;
+  padding: 13px 15px 4px 15px;
   z-index: 2;
   display: inline-block;
   position: relative;
@@ -761,6 +776,7 @@ body {
 
 .certificates {
   margin: 70px auto;
+  display: none;
 }
 
 .certificates__items {
@@ -788,6 +804,7 @@ body {
   background: var(--mainColor);
   padding-top: 24px;
   padding-bottom: 74px;
+  margin-top: 70px;
 }
 
 .feedback__form {
@@ -1151,7 +1168,7 @@ body {
     left: 0;
     width: 100vw;
     padding-bottom: 30px;
-    background: #000;
+    background: var(--mainColor);
     z-index: -3;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1272,8 +1289,231 @@ body {
     text-align: center;
   }
 
+  .profiles__items_title.title {
+    font-size: 21px;
+  }
+
+  .profiles__label {
+    max-width: initial;
+    width: max-content;
+    padding-left: 0;
+    padding: 10px;
+  }
+
+  .profiles__item {
+    max-width: 220px;
+  }
+
+  .profiles__text.text {
+    font-size: 16px;
+  }
+
+  .profiles__items {
+    padding: 20px 20px 10px;
+  }
+
+  .benefits__item_title {
+    font-size: 26px;
+  }
+
+  .benefits__grid.mobile {
+    display: flex;
+  }
+
+  .benefits__grid {
+    display: none;
+  }
+
+  .benefits.container {
+    max-width: inherit;
+  }
+
+  .certificates__item {
+    max-width: 290px;
+    height: 400px;
+  }
+
+
 }
 
+@media(max-width: 576px) {
+  .logo {
+    width: 100px;
+    height: 65px;
+  }
+
+  .nav__right {
+    gap: 15px;
+  }
+
+  .link {
+    font-size: 14px;
+  }
+
+  .hero {
+    height: 400px;
+    margin: 30px auto;
+  }
+
+  .hero__title {
+    font-size: 24px;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+
+  .about__title {
+    margin-bottom: 20px;
+  }
+
+  .about__img.container-secondary {
+    padding: 0;
+  }
+
+  .production__title,
+  .products__title {
+    margin-bottom: 30px;
+  }
+
+  .profiles__items,
+  .footer__icons {
+    margin-top: 30px;
+  }
+
+  .profiles__item {
+    max-width: 290px;
+  }
+
+  .profiles__label {
+    padding: 10px;
+  }
+
+  .profiles__items {
+    padding: 20px 10px 10px;
+  }
+
+  .profiles__text.text {
+    font-size: 14px;
+  }
+
+  .feedback {
+    padding-top: 24px;
+    padding-bottom: 40px;
+    margin-top: 20px;
+  }
+
+  .footer {
+    margin-top: 60px;
+    padding-top: 36px;
+    padding-bottom: 30px;
+  }
+
+  .footer__list {
+    gap: 20px;
+  }
+
+  .footer__inner {
+    gap: 30px;
+  }
+
+  .footer__icons img {
+    width: 35px;
+  }
+
+  .footer__logo img {
+    width: 120px;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .about__intro .text {
+    font-size: 14px;
+  }
+
+  .about__text {
+    margin-left: 0;
+  }
+
+  .products__header_title {
+    padding: 9px 25px;
+  }
+
+  .products__table_row .products__table_heading {
+    font-size: 14px;
+  }
+
+  .products__items {
+    padding: 25px 5px 80px;
+  }
+
+  .products__table_cell {
+    font-size: 8px;
+  }
+
+  .products__table_row .products__table_heading {
+    font-size: 12px;
+  }
+
+  .products__header_title.title {
+    font-size: 16px;
+  }
+
+  .swiper__btns {
+    height: 40px !important;
+    bottom: 20px;
+    width: 180px;
+  }
+
+  :root {
+    --swiper-navigation-size: 20px;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 60px !important;
+  }
+
+  .profiles__title.title {
+    font-size: 24px;
+  }
+
+  .profiles__list {
+    justify-content: center;
+  }
+
+  .nav__right {
+    margin-bottom: 0;
+  }
+
+  .logo img {
+    width: 90px;
+  }
+
+  .hero {
+    padding-left: 20px;
+  }
+
+  .nav__list.mobile li {
+    width: 50vw;
+  }
+
+  .benefits__item_text {
+    font-size: 14px;
+  }
+
+  .benefits__grid {
+    margin-top: 30px;
+  }
+
+  .benefits__icon img {
+    width: 100px;
+    height: 100px;
+  }
+
+}
 
 
 

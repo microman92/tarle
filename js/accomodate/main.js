@@ -51,6 +51,27 @@ const productSwiper = new Swiper('.products__slider', {
   },
 })
 
+const benefitSwiper = new Swiper('.benefits__grid.mobile', {
+  slidesPerView: 2,
+  spaceBetween: 20,
+  loop: true,
+
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+    pauseOnMouseEnter: true,
+  },
+  speed: 2000,
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    577: {
+      slidesPerView: 2,
+    },
+  },
+})
+
 
 
 document.querySelector('.feedback__form').addEventListener('submit', async function (e) {
